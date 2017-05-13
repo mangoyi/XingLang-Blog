@@ -1,0 +1,249 @@
+*{ 
+	margin:0;
+	padding:0;
+}
+
+#main div.audio-box{ 
+	width:900px;
+}
+
+#main ul li{ 
+	list-style:none;
+}
+
+#main ul{ 
+	padding:10px;
+}
+#main audio{
+	width:100%;
+}
+
+#main .audio-box{ 
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+
+}
+
+#main .audio-box .audio-list{ 
+	width:900px;
+	height:150px;
+	border:1px solid #E7E9E8;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	margin-bottom:5px;
+	overflow-y:auto;
+	background:rgba(220,200,200,.4);
+}
+
+#main ul li{ 
+	margin-bottom:5px;
+	padding:5px 5px 5px 5px;
+	cursor:pointer;
+	line-height:20px;
+	font-size:18px;
+}
+
+#main ul li:hover{ 
+	background:rgba(169,222,71,.7);
+}
+
+#main .play{ 
+	background:rgba(200,20,20,.5) !important;/*忽略默认优先级而设为最高*/
+	color:rgba(255,255,255,1);
+}
+
+/*上面模块*/
+	.smallBox{
+		width: 400px;
+		height: 350px;
+		float: left;
+		position: relative;
+		margin: 10px;
+		overflow: hidden;
+	}
+	.show img{
+		width: 400px;
+		height: 350px;
+		opacity: 1;
+		transition: all 2s;
+	}
+	.smallBox:hover img{
+		opacity: 0.5;
+	}
+	.info{
+		color: white;
+		position: absolute;
+		transition: all 2.0s;
+	}
+		
+		/************ view5 *************/
+			.view1 h2{
+		color: white;
+		position: absolute;
+		left: 40px;
+		top: 40px;
+		transition: all 2s;
+	}
+	.view1:hover h2{
+		transform: translateX(20px);
+	}
+	.view1 img{
+		width: 430px;
+	}
+	.view1:hover img{
+		transform: translateX(-30px);
+	}
+	.view1 .p1{
+		left: 40px;
+		top: 100px;
+		transform: translateY(250px);
+	}
+	.view1:hover .p1{
+		transform: translateY(0);
+	}
+	.view1 .p2{
+		left: 40px;
+		top: 160px;
+		transform: translateX(400px);
+	}
+	.view1:hover .p2{
+		transform: translateX(0);
+	}
+	.view1 .p3{
+		left: 40px;
+		top: 220px;
+		transform: translateX(-400px);
+	}
+	.view1:hover .p3{
+		transform: translateX(0);
+	}	
+
+	.view5 h2{
+		position: absolute;
+		top: 40px;
+		left: 40px;
+		color: white;
+		transform: translateY(-30px);
+		transition: all 2s;
+		opacity: 0;
+	}
+	.view5:hover h2{
+		transform: translateY(0);
+		opacity: 1;
+	}
+	.view5 .info{
+		position: absolute;
+		top: 80px;
+		left: 40px;
+		width: 320px;
+		transform: translateY(400px);
+	}
+	.view5:hover .info{
+		transform: translateX(0);
+	}
+	.view5 div{
+		width: 360px;
+		height: 310px;
+		border: 3px solid white;
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		transform: translateY(360px) rotate(0deg);
+		transition: all 2s;
+	}
+	.view5:hover div{
+		transform: translateY(0) rotate(360deg);
+	}		
+
+		/************ view6 *************/
+	.view6 div{
+		position: absolute;
+		/*注意宽度问题*/
+		width: 600px;
+		height: 150px;
+		border: 3px solid white;
+		color: white;
+		left: 0;
+		bottom: 0;
+		transform: rotate(0deg);
+		transition: all 2s;
+		opacity: 0;
+	}
+	.view6:hover div{
+		opacity: 1;
+		transform: rotate(-45deg);
+	}
+	.view6 p{
+		/*注意宽度问题*/
+		width: 600px;
+		text-align: center;
+	}
+	.view6 .p1{
+		top: 0px;
+		font-size: 22px;
+	}
+	.view6:hover .p1{
+		transform: rotate(360deg);
+	}
+	.view6 .p2{
+		top: 40px;
+	}
+	.view6:hover .p2{
+		transform: rotate(-360deg);
+	}
+
+
+		/************ view8 *************/
+	/* 上下边线*/
+.view8 .top{
+	position: absolute;
+	left: 30px;
+	top: 45px;
+	/*width: 340px;*/
+	/* 宽度是为0*/
+	width: 0;
+	height: 260px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	opacity: 0;
+	transition: all 2s;
+
+}
+.view8:hover .top{
+	width: 340px;
+	opacity: 1;
+}
+/* 左右边线*/
+.view8 .left{
+	position: absolute;
+	left: 50px;
+	top: 25px;
+	width: 300px;
+	/*height: 300px;*/
+	height: 0;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	transition: all 2s;
+	opacity: 0;
+}
+.view8:hover .left{
+	opacity: 1;
+	height: 300px;
+}
+.show:hover{
+	display: block;
+	content: "";
+	clear:both;
+}
+.show{
+	width:840px;
+	height:800px;
+	margin:0 auto;
+}

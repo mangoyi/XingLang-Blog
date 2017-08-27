@@ -9,7 +9,7 @@ function ajax(obj) {
 										'MSXML2.XMLHttp.3.0',
 										'MSXML2.XMLHttp'
 			];
-			for (var i = 0; version.length; i ++) {
+			for (var i = 0; i < version.length; i ++) {
 				try {
 					return new ActiveXObject(version[i]);
 				} catch (e) {
